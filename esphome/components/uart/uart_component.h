@@ -10,6 +10,8 @@
 #include "esphome/core/automation.h"
 #endif
 
+#include "Stream.h"
+
 namespace esphome {
 namespace uart {
 
