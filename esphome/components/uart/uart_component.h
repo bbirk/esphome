@@ -155,6 +155,8 @@ class UARTComponent {
   }
 #endif
 
+  virtual Stream *get_stream() = 0;
+
  protected:
   virtual void check_logger_conflict() = 0;
   bool check_read_timeout_(size_t len = 1);

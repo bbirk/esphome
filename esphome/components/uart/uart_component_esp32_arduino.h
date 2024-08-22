@@ -29,6 +29,8 @@ class ESP32ArduinoUARTComponent : public UARTComponent, public Component {
 
   uint32_t get_config();
 
+  Stream *get_stream() override { return hw_serial_; }
+
   HardwareSerial *get_hw_serial() { return this->hw_serial_; }
   uint8_t get_hw_serial_number() { return this->number_; }
 
