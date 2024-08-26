@@ -103,4 +103,4 @@ def to_code(config):
             cg.add(var.set_sleep_pin(sleep_pin))
 
     cg.add_library("SPI", None)
-    cg.add_library("teemuatlut/TMCStepper", "0.7.1")
+    cg.add_library("teemuatlut/TMCStepper", "0.7.3")
