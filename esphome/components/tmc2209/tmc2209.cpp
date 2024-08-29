@@ -9,7 +9,7 @@ static const char *TAG = "tmc2209.stepper";
 void TMC2209::setup() {
   ESP_LOGCONFIG(TAG, "Setting up TMC2209...");
 
-  // this->get_stream()->write("Hello from UART");
+  this->get_stream()->write("Hello from UART");
 
   stepper_driver_ = new TMC2209Stepper(this->get_stream(), sense_resistor_, uart_address_);
 
