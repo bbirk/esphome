@@ -68,6 +68,7 @@ template<typename... Ts> class TMC2209SetupAction : public Action<Ts...>, public
       ESP_LOGW("tmc2209", "sense_resistor %.3f", this->sense_resistor_.value(x...));
     }
     ESP_LOGW("tmc2209", "SGTHRS %d", driver.SGTHRS());
+    driver.push();
   }
 };
 
